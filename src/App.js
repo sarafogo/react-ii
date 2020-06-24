@@ -1,11 +1,15 @@
 import React from 'react';
 import Home from  '../src/paginas/Home/Home'
+import data from './data.json'
+
 import './App.css';
+import Login from './paginas/Login/Login';
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Home data={data} />
+      <Login />
     </div>
   );
 }
